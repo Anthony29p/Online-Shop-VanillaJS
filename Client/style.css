@@ -93,3 +93,37 @@ footer{
 .product-price{
     font-size: 2rem ;
 }
+
+form.search-form{
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 250px;
+}
+
+form.search-form input[type='text'] {
+    /* float: left; */
+    /* width: 80%; */
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+form.search-form button {
+    /* float: left; */
+    width: 60px;
+    background: #f0c040;
+
+    border-left: none;
+    cursor: pointer;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+form.search-form button:hover {
+    background: #0b7dda;
+}
+/* Clear floats */
+form.search-form::after {
+    content: '';
+    clear: both;
+    display: table;
+}
