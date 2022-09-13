@@ -1,5 +1,5 @@
 import { getProducts } from '../actions.js';
-import {parseRequestURL} from '../utils'
+import {parseRequestURL} from '../utils.js'
 
 const Home={
     render: async () => {
