@@ -21,8 +21,8 @@ const router = async() =>{
     main.innerHTML = await screen.render();
 
     const header = document.getElementById('header-container');
-    header.innerHTML =  Header.render();
-    Header.after_render();
+    header.innerHTML = await Header.render();
+    Header.after_render(); 
 
 
 

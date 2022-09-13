@@ -4,8 +4,8 @@ import {parseRequestURL} from '../utils.js'
 const Home={
     render: async () => {
 
-        const { value } = parseRequestURL();
-        const products = await getProducts({ searchKeyword: value });
+        const { value,category } = parseRequestURL();
+        const products = await getProducts({ searchKeyword: value,filterKeyword: category });
 
         return `
         <ul class="products">
@@ -22,7 +22,7 @@ const Home={
                             </a>
                         </div>
                         <div class="product-brand">
-                            ${product.category}
+                            ${product.categoryName}
                         </div>
                         <div class="product-price">
                             $${product.price}
