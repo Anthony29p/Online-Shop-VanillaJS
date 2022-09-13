@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "axios": "^0.27.2",
+    "dotenv": "^16.0.2",
     "nodemon": "^2.0.19"
   }
 }
