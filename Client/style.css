@@ -119,7 +119,7 @@ form.search-form button {
     border-bottom-left-radius: 0;
 }
 form.search-form button:hover {
-    background: #0b7dda;
+    background: #075493;
 }
 /* Clear floats */
 form.search-form::after {
