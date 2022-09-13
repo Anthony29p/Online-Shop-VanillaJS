@@ -1,7 +1,7 @@
 import axios from 'axios';
 // import { apiUrl } from './config';
-// const apiUrl ="https://online-shop-vanillajs.herokuapp.com"
-const apiUrl ="http://localhost:3001"
+const apiUrl ="https://online-shop-vanillajs.herokuapp.com"
+// const apiUrl ="http://localhost:3001"
 export const getProducts = async ({ searchKeyword,filterKeyword}) => {
   try {
     let queryString = '';
