@@ -1,4 +1,5 @@
 // Server configuration
+require('dotenv').config();
 
 const express = require('express')
 const cookieParser = require('cookie-parser');
@@ -6,11 +7,13 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const routes = require('./routes/index.js');
 
+const {PORT} = process.env;
+
 const cors =require('cors')
 
 const app = express()
-
-app.set('port',3001)
+ 
+app.set('port',PORT)
 
 app.use(cors())
 
