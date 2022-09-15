@@ -5,6 +5,8 @@ import {parseRequestURL} from './utils.js'
 
 import Header from './components/Header.js'
 
+import './styles/style.css'
+
 const routes = {
     '/': Home,
     '/product/:id':Product,
@@ -23,8 +25,6 @@ const router = async() =>{
     const header = document.getElementById('header-container');
     header.innerHTML = await Header.render();
     Header.after_render(); 
-
-
 
     console.log(request)
 
