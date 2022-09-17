@@ -1,6 +1,8 @@
 const path = require('path')
 const htmlWebpackPlugin = require('html-webpack-plugin')
 
+
+
 module.exports={
     mode: 'development',
     entry:{
@@ -15,7 +17,7 @@ module.exports={
         static:{
             directory: path.resolve(__dirname,'dist')
         },
-        port: 4000,
+        // port: 4000,
         open: true,
         hot: true,
         compress: true,
