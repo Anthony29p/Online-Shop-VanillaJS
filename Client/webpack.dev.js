@@ -3,6 +3,7 @@ const path = require('path')
 
 const common = require('./webpack.common.js');
 
+
 module.exports = merge(common, {
 
   mode: 'development',
@@ -11,6 +12,7 @@ module.exports = merge(common, {
     static:{
         directory: path.resolve(__dirname,'dist')
     },
+    port:process.env.PORT || 4000,
     open: true,
     hot: true,
     compress: true,
