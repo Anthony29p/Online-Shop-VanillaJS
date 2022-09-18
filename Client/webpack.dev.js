@@ -12,7 +12,8 @@ module.exports = merge(common, {
     static:{
         directory: path.resolve(__dirname,'dist')
     },
-    port:process.env.PORT || 4000,
+    allowedHosts: 'auto',
+    // port:process.env.PORT || 4000,
     open: true,
     hot: true,
     compress: true,
